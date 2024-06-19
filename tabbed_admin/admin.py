@@ -1,6 +1,10 @@
 from django.conf import settings
 from django.contrib.admin.options import ModelAdmin
-from django.utils.translation import ugettext_lazy as _
+from django import get_version
+if get_version() >= "4.0":
+    from django.utils.translation import gettext_lazy as _
+else:
+    from django.utils.translation import ugettext_lazy as _
 
 from .settings import USE_JQUERY_UI, JQUERY_UI_CSS, JQUERY_UI_JS
 
