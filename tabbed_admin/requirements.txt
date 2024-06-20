@@ -2,5 +2,5 @@
 
 Django
 django-grappelli
-django-tabbed-admin
+django-tabbed-admin-u
 django-gipsy

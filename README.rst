@@ -13,12 +13,13 @@
   :alt: coverage
   :height: 18px
 
-###################
-Django tabbed admin
-###################
+#####################
+Django tabbed admin u
+#####################
 
 Simple library to easilly add tabs to admin forms. It also allows users to re-order inlines and fieldsets.
 Django tabbed admin is compatible with django-grappelli and django-gipsy.
+Patched with 'ugettext/gettext' selection to solve import error with later versions of Django, and to keep backwards compatibility for previous versions.
 
 .. image:: https://box.everhelper.me/attachment/256054/rSqCFM20d245qFlG5z64EgiOVpeuTU3P/341506-h1u4JrpaUan0tG2e/screen.png
    :height: 400px
@@ -40,13 +41,13 @@ From PyPi
 
 .. code-block::  shell-session
 
-    pip install django-tabbed-admin
+    pip install django-tabbed-admin-u
 
 From Github
 
 .. code-block::  shell-session
 
-    https://github.com/omji/django-tabbed-admin#egg=tabbed_admin
+    https://github.com/intp1/django-tabbed-admin#egg=tabbed_admin
 
 
 *****
@@ -206,6 +207,10 @@ LINKS
 
 Development:
     https://github.com/omji/django-tabbed-admin
+    or
+    https://github.com/intp1/django-tabbed-admin
 
 Package:
     https://pypi.python.org/pypi/django-tabbed-admin
+    or
+    https://pypi.python.org/pypi/django-tabbed-admin-u

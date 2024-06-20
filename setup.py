@@ -14,16 +14,16 @@ else:
 
 
 setup(
-    name='django-tabbed-admin',
+    name='django-tabbed-admin-u',
     version='1.0.4',
-    author='Guillaume Pousseo',
-    author_email='guillaumepousseo@revsquare.com',
-    description='Easily add tabs to django admin forms.',
+    author='intp1',
+    author_email='intp1@protonmail.com',
+    description="Patched with 'ugettext/gettext' support for django-tabbed-admin",
     long_description=open('README.rst').read(),
     url='http://www.revsquare.com',
     license='BSD License',
     platforms=['OS Independent'],
-    packages=find_packages(),
+    packages=find_packages("./tabbed_admin", include=['*.py','*.txt','static.*','templates.*','templatetags.*']),
     include_package_data=True,
     classifiers=[
         'Development Status :: 5 - Production/Stable',

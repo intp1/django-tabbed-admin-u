@@ -9,6 +9,6 @@ build/*
 dist/*
 *.egg-info
 */.sass-cache
-tabbed_admin/tests/database.db
+tabbed_admin_u/tests/database.db
 tabbed_admin_exemple/db.sqlite3
-django_tabbed_admin.egg-info
+django_tabbed_admin_u.egg-info
