@@ -60,7 +60,7 @@ Simply add the app in your installed apps list in settings.py
 
     INSTALLED_APPS = (
         ...
-        'tabbed_admin'
+        'tabbed_admin_u'
         ...
     )
 
@@ -110,7 +110,7 @@ A full example would give:
 
     from django.contrib import admin
 
-    from tabbed_admin import TabbedModelAdmin
+    from tabbed_admin_u import TabbedModelAdmin
     from .models import Band, Musician, Album
 
 
@@ -208,7 +208,7 @@ LINKS
 Development:
     https://github.com/omji/django-tabbed-admin
     or
-    https://github.com/intp1/django-tabbed-admin
+    https://github.com/intp1/django-tabbed-admin-u
 
 Package:
     https://pypi.python.org/pypi/django-tabbed-admin
