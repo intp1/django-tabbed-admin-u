@@ -15,5 +15,5 @@ install:
 before_script:
   - "flake8 tabbed_admin"
 script:
-  - coverage run --source tabbed_admin tabbed_admin/tests/runtests.py
+  - coverage run --source tabbed_admin_u tabbed_admin_u/tests/runtests.py
 after_success: coveralls

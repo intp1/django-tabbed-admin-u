@@ -14,7 +14,7 @@ class TabbedModelAdmin(ModelAdmin):
     formatted_tabs = {}
 
     # Needs a specific template to display the tabs
-    change_form_template = 'tabbed_admin/change_form.html'
+    change_form_template = 'tabbed_admin_u/change_form.html'
 
     def get_fieldsets(self, request, obj=None):
         """
@@ -147,8 +147,8 @@ class TabbedModelAdmin(ModelAdmin):
         TABBED_ADMIN_USE_JQUERY_UI is set to True.
         """
         if 'grappelli' in settings.INSTALLED_APPS:
-            css = {'all': ("tabbed_admin/css/tabbed_grappelli_admin.css", )}
+            css = {'all': ("tabbed_admin_u/css/tabbed_grappelli_admin.css", )}
 
         if USE_JQUERY_UI:
-            css = {'all': (JQUERY_UI_CSS, 'tabbed_admin/css/tabbed_admin.css', )}
+            css = {'all': (JQUERY_UI_CSS, 'tabbed_admin_u/css/tabbed_admin_u.css', )}
             js = (JQUERY_UI_JS,)
